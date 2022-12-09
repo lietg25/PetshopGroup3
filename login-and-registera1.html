@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> Website Design</title>
+    <script type="text/javascript">
+      function lettersOnly(input){
+      var regex = /[^a-z]/gi;
+      input.value = input.value.replace(regex,"");
+  }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+        $(document).ready(function () {
+           $('#txtUserName').keypress(function (key) {              
+  
+                var regexprn = new RegExp("^[a-zA-Z0-9@.]+$");
+                var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                if (!regexprn.test(key)) {
+                      event.preventDefault();
+                      $('#lblMsg').css('display', 'block');
+                      return false;
+                 }
+                else {
+                      $('#lblMsg').css('display', 'none');
+                 }
+              })
+          });
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript">
+            $(document).ready(function () {
+               $('#txtUserNamebb').keypress(function (key) {              
+      
+                    var regexprn = new RegExp("^[a-zA-Z0-9@]+$");
+                    var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                    if (!regexprn.test(key)) {
+                          event.preventDefault();
+                          $('#lblMsg').css('display', 'block');
+                          return false;
+                     }
+                    else {
+                          $('#lblMsg').css('display', 'none');
+                     }
+                  })
+              });
+          </script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script type="text/javascript">
+                $(document).ready(function () {
+                   $('#txtUserNamecc').keypress(function (key) {              
+          
+                        var regexprn = new RegExp("^[a-zA-Z0-9@]+$");
+                        var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                        if (!regexprn.test(key)) {
+                              event.preventDefault();
+                              $('#lblMsg').css('display', 'block');
+                              return false;
+                         }
+                        else {
+                              $('#lblMsg').css('display', 'none');
+                         }
+                      })
+                  });
+              </script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+           $('#txtUserNameaa').keypress(function (key) {              
+  
+                var regexprn = new RegExp("^[a-zA-Z0-9@]+$");
+                var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                if (!regexprn.test(key)) {
+                      event.preventDefault();
+                      $('#lblMsg').css('display', 'block');
+                      return false;
+                 }
+                else {
+                      $('#lblMsg').css('display', 'none');
+                 }
+              })
+          });
+      </script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+ <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+ integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    
+    <div class="bgpic">
+        <img src="https://i.pinimg.com/736x/5f/64/9c/5f649c728fc328958997f3feecbf3a7c.jpg">
+    </div>
+   
+    <div class="container">
+      <div class="form-container">
+        <div class="signin">
+          <form action="index.html" class="form-sign-in">
+
+            <h1>Sign In</h1>
+            UserName<input type = "email" placeholder = " Your Email Address" name = "emailr" id = "txtUserName" required style = "width:50%">
+            <label id="lblMsg" style="display:none; color:rgb(133, 0, 7)"> Special characters and spaces are not allowed.</label>
+            Password <input type = "password" placeholder = " Your Password" name = "password" id = "txtUserNameaa" required style = "width:50%">
+	 <label id="lblMsg" style="display:none; color:rgb(151, 1, 1)"> Special characters and spaces are not allowed.</label>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+   <center>
+    <button type = "submit"><font face = "Comic Sans MS">Login</font></button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+    <button type="reset" id = "reset"><font face = "Comic Sans MS">Reset</font></button>
+</center>
+          </form>
+        </div>
+
+        <div class="signup">
+          <form action="" class="form-sign-up">
+            <h1>Sign Up</h1>
+            UserName<input type = "email" placeholder = " Your Email Address" name = "emailr" id = "txtUserNamebb" required style = "width:50%">
+            <label id="lblMsg" style="display:none; color:red"> Sepecial characters and spaces are not allowed.</label>
+            Password <input type = "password" placeholder = " Your Password" name = "password" id = "txtUserNamecc" required style = "width:50%">
+	          <label id="lblMsg" style="display:none; color:red"> Sepecial characters and spaces are not allowed.</label>
+            Enter Name<input type = "text" placeholder = " Enter Your Name" name = "name" id = "txtUserNameaa" onkeyup="lettersOnly(this)" required style = "width:50%">
+            <label id="lblMsg" style="display:none; color:red"> Sepecial characters and spaces are not allowed.</label>
+            Birthdate<input type = "date" name = "bday" id = "txtUserNameff" required style = "width:50%"></td>
+            Phone Number<input type = "number" name = "number" min="0" placeholder="Your Number"id = "txtUserNamegg" maxlength = "11" required style = "width:50%"></td>
+          
+           
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+            <center>
+              <button type="submit"><font face = "Comic Sans MS">Register</font></button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			
+              <button type="reset"><font face = "Comic Sans MS">Reset</font></button>
+            </center>
+        
+           
+          
+          </form>
+        </div>
+      </div>
+      <div class="overlay">
+        <div class="overlay-panel overlay-signin">
+          <img src = "https://img.freepik.com/free-vector/cute-panda-drawing-with-crayon-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated_138676-4542.jpg?w=2000" width = "300"  height = "200">
+          <h1>
+            Welcome Back!
+          </h1>
+          <span>
+            To keep connected with us please login with your personal info
+          </span>
+          <button class="btn btn-overlay" onclick="togglePage()">
+            Sign In
+          </button>
+        </div>
+        <div class="overlay-panel overlay-signup">
+        
+            <img src="https://64.media.tumblr.com/ebae62d84c1bb08273ea24f0c91c0800/tumblr_n25yl7nJPg1qji3sdo1_640.jpg" width = "300" height = "200">
+          <h1>
+            Hello, AniMall!
+          </h1>
+          <span>
+            Enter your personal details and start journey with us
+          </span>
+          <button class="btn btn-overlay" onclick="togglePage()">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+  <script>
+    function togglePage() {
+      document.querySelector(".overlay-signin").classList.toggle("show");
+      document.querySelector(".overlay-signup").classList.toggle("hide");
+      document.querySelector(".signup").classList.toggle("show");
+      document.querySelector(".signin").classList.toggle("hide");
+    }
+  </script>
+
+  
+</html>
